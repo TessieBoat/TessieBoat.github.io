@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://TessieBoat.github.io</id>
-    <title>Gridea</title>
-    <updated>2019-10-02T00:43:54.850Z</updated>
+    <title>TessieBoat</title>
+    <updated>2019-10-02T00:45:34.882Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://TessieBoat.github.io"/>
     <link rel="self" href="https://TessieBoat.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>享受学习的快乐</subtitle>
     <logo>https://TessieBoat.github.io/images/avatar.png</logo>
     <icon>https://TessieBoat.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[10月3日作业提交]]></title>
-        <id>https://TessieBoat.github.io/post/10-yue-3-ri-zuo-ye-ti-jiao</id>
-        <link href="https://TessieBoat.github.io/post/10-yue-3-ri-zuo-ye-ti-jiao">
-        </link>
-        <updated>2019-10-02T00:37:26.000Z</updated>
-        <content type="html"><![CDATA[<p>地理作业请提交：https://www.wenjuan.com/s/veMvaqd</p>
-<p>物理作业请提交：https://www.wenjuan.com/s/2I7Vfy8</p>
-<p>化学作业请提交：https://www.wenjuan.com/s/YnqiUn1</p>
-<p>数学作业请提交：https://www.wenjuan.com/s/Rj6rQz4</p>
-<p>英语作业请提交：https://www.wenjuan.com/s/aau22ec/</p>
-<p>各位同学：今日晚九点准时关闭提交入口，届时无法再提交作业。</p>
-<p>各位课代表（包括化学课代表）：以上学科明日无需qq收作业（为方便收取作业，如有同学qq发作业，请告知其在本页面发布）请于晚九点准时上线，届时将发布同学已提交的所有作业图片将打包发给你们审核，如有异常及时汇报作业图片编号。</p>
-<p>谢谢合作！</p>
-]]></content>
-    </entry>
+    <rights>All rights reserved 2019, TessieBoat</rights>
 </feed>
