@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>C:/Users/34990/Documents/Gridea/output</id>
+    <id>https://TessieBoat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-10-12T14:34:24.535Z</updated>
+    <updated>2019-10-12T15:06:01.633Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="C:/Users/34990/Documents/Gridea/output"/>
-    <link rel="self" href="C:/Users/34990/Documents/Gridea/output/atom.xml"/>
+    <link rel="alternate" href="https://TessieBoat.github.io"/>
+    <link rel="self" href="https://TessieBoat.github.io/atom.xml"/>
     <subtitle>享受学习的快乐</subtitle>
-    <logo>C:/Users/34990/Documents/Gridea/output/images/avatar.png</logo>
-    <icon>C:/Users/34990/Documents/Gridea/output/favicon.ico</icon>
+    <logo>https://TessieBoat.github.io/images/avatar.png</logo>
+    <icon>https://TessieBoat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, TessieBoat</rights>
     <entry>
         <title type="html"><![CDATA[字符串进阶(string)用法]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/zi-fu-chuan-jin-jie-stringyong-fa/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/zi-fu-chuan-jin-jie-stringyong-fa/index.html">
+        <id>https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa</id>
+        <link href="https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
         </link>
         <updated>2019-10-12T13:54:38.000Z</updated>
         <content type="html"><![CDATA[<p>这是一个<s>非常脑残的</s>字符串。<br>
@@ -46,6 +46,10 @@ s.replace(5,4,&quot;233&quot;); //从第五位吞掉往后的4个字符，加上
 strcpy(a,b); //把b字符串覆盖给a 
 strlen(a+0); //从a[0]开始查找有多少字符 
 memcpy(a,b,sizeof(char)*100); //把整个b的前100位字符传送给a 
+</code></pre>
+<p>前排提醒</p>
+<pre><code>'0'=48
+'a'=97
 </code></pre>
 ]]></content>
     </entry>
