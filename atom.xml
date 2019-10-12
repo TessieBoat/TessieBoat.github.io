@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://TessieBoat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-10-12T14:31:29.942Z</updated>
+    <updated>2019-10-12T14:32:25.138Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://TessieBoat.github.io"/>
     <link rel="self" href="https://TessieBoat.github.io/atom.xml"/>
@@ -16,8 +16,8 @@
         <link href="https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
         </link>
         <updated>2019-10-12T13:54:38.000Z</updated>
-        <content type="html"><![CDATA[<p>这是一个<s>非常脑残的</s>字符串。<br>
-对于一个C<s>大爷</s>选手，还是挺不习惯这个的。</p>
+        <content type="html"><![CDATA[<p>这是一个~~<strong>非常脑残的</strong><s>字符串。<br>
+对于一个C</s><strong>大爷</strong>~~选手，还是挺不习惯这个的。</p>
 <h3 id="1头文件">1.头文件</h3>
 <pre><code>#include &lt;cstring&gt;
 </code></pre>
@@ -26,7 +26,7 @@
 </code></pre>
 <p>相当于一个不定长的char。</p>
 <h3 id="3使用">3.使用</h3>
-<p>基本<s>操作</s>用法</p>
+<p>基本~~<strong>操作</strong>~~用法</p>
 <pre><code>cin&gt;&gt;s; //输入
 cout&lt;&lt;s&lt;&lt;endl; //输出
 </code></pre>
