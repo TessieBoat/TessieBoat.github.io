@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://TessieBoat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-10-02T06:23:38.857Z</updated>
+    <updated>2019-10-12T14:31:29.942Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://TessieBoat.github.io"/>
     <link rel="self" href="https://TessieBoat.github.io/atom.xml"/>
@@ -11,19 +11,42 @@
     <icon>https://TessieBoat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, TessieBoat</rights>
     <entry>
-        <title type="html"><![CDATA[10月2日作业提交]]></title>
-        <id>https://TessieBoat.github.io/post/10-yue-3-ri-zuo-ye-ti-jiao</id>
-        <link href="https://TessieBoat.github.io/post/10-yue-3-ri-zuo-ye-ti-jiao">
+        <title type="html"><![CDATA[字符串进阶(string)用法]]></title>
+        <id>https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa</id>
+        <link href="https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
         </link>
-        <updated>2019-10-02T00:37:26.000Z</updated>
-        <content type="html"><![CDATA[<p>地理作业请提交：<a href="https://www.wenjuan.com/s/veMvaqd">https://www.wenjuan.com/s/veMvaqd</a></p>
-<p>物理作业请提交：<a href="https://www.wenjuan.com/s/2I7Vfy8">https://www.wenjuan.com/s/2I7Vfy8</a></p>
-<p>化学作业请提交：<a href="https://www.wenjuan.com/s/YnqiUn1">https://www.wenjuan.com/s/YnqiUn1</a></p>
-<p>数学作业请提交：<a href="https://www.wenjuan.com/s/Rj6rQz4">https://www.wenjuan.com/s/Rj6rQz4</a></p>
-<p>英语作业请提交：<a href="https://www.wenjuan.com/s/aau22ec/">https://www.wenjuan.com/s/aau22ec/</a></p>
-<p>各位同学：今日晚九点准时关闭提交入口，届时无法再提交作业。</p>
-<p>各位课代表（包括化学课代表）：以上学科明日无需qq收作业（为方便收取作业，如有同学qq发作业，请告知其在本页面发布）请于晚九点准时上线，届时将发布同学已提交的所有作业图片将打包发给你们审核，如有异常及时汇报作业图片编号。</p>
-<p>谢谢合作！</p>
+        <updated>2019-10-12T13:54:38.000Z</updated>
+        <content type="html"><![CDATA[<p>这是一个<s>非常脑残的</s>字符串。<br>
+对于一个C<s>大爷</s>选手，还是挺不习惯这个的。</p>
+<h3 id="1头文件">1.头文件</h3>
+<pre><code>#include &lt;cstring&gt;
+</code></pre>
+<h3 id="2声明">2.声明</h3>
+<pre><code>string s;
+</code></pre>
+<p>相当于一个不定长的char。</p>
+<h3 id="3使用">3.使用</h3>
+<p>基本<s>操作</s>用法</p>
+<pre><code>cin&gt;&gt;s; //输入
+cout&lt;&lt;s&lt;&lt;endl; //输出
+</code></pre>
+<p>进阶用法</p>
+<pre><code>getline(cin,s); //输入一整行  但是\n会被记录 
+s.length()  一个值，字符串长度
+s=s+t; //把t插入在s后面
+s.substr(1,3)  一串字符，从s的第1位到第3位
+s.find_first_of(&quot;aaa&quot;)  一个值，表示第一个存在aaa的位置
+s.find_first_of(&quot;aaa&quot;,10)  一个值，表示10位之后第一个存在aaa的位置
+s.find(&quot;aaa&quot;)  一个值，存在aaa的位置
+s.erase(5,4); //从第五位开始连续删除4个字符 
+s.replace(5,4,&quot;233&quot;); //从第五位吞掉往后的4个字符，加上233
+</code></pre>
+<h3 id="4其他">4.其他</h3>
+<pre><code>strcmp(a,b)  一个值，字典序比较，a大输出正数  一样大输出0  b大输出负数 
+strcpy(a,b); //把b字符串覆盖给a 
+strlen(a+0); //从a[0]开始查找有多少字符 
+memcpy(a,b,sizeof(char)*100); //把整个b的前100位字符传送给a 
+</code></pre>
 ]]></content>
     </entry>
 </feed>
