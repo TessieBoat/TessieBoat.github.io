@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>字符串进阶(string)用法 | TessieBoat</title>
+<title>vector 用法 | TessieBoat</title>
 <meta name="description" content="享受学习的快乐" />
 <link rel="shortcut icon" href="https://TessieBoat.github.io/favicon.ico?v=1570965215171">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -64,11 +64,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              字符串进阶(string)用法
+              vector 用法
             </h2>
             <div class="post-info">
               <span>
-                2019-10-12
+                2019-10-13
               </span>
               <span>
                 1 min read
@@ -78,41 +78,22 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>这是一个<s>非常脑残的</s>字符串。<br>
-对于一个C<s>大爷</s>选手，还是挺不习惯这个的。</p>
-<h3 id="1头文件">1.头文件</h3>
-<pre><code>#include &lt;cstring&gt;
+                <h3 id="1-头文件">1. 头文件</h3>
+<pre><code>#include &lt;queue&gt;
 </code></pre>
-<h3 id="2声明">2.声明</h3>
-<pre><code>string s;
+<h3 id="2-声明">2. 声明</h3>
+<pre><code>priority_queue &lt;int&gt; Q;//定义一个从大到小队列叫做 “Q” 
+priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt; &gt; Q;   //从小到大的队列 
 </code></pre>
-<p>相当于一个不定长的char。</p>
-<h3 id="3使用">3.使用</h3>
-<p>基本<s>操作</s>用法</p>
-<pre><code>cin&gt;&gt;s; //输入
-cout&lt;&lt;s&lt;&lt;endl; //输出
+<h3 id="3-用法">3. 用法</h3>
+<pre><code>Q.top()   //输出第一位
+Q.pop();  //删除第一位
+Q.size()  //输出栈长度   
+Q.empty()  //输出是否为空（1或0）
+Q.push(x);  //把x输入进队列，并马上排序
 </code></pre>
-<p>进阶用法</p>
-<pre><code>getline(cin,s); //输入一整行  但是\n会被记录 
-s.length()  一个值，字符串长度
-s=s+t; //把t插入在s后面
-s.substr(1,3)  一串字符，从s的第1位到第3位
-s.find_first_of(&quot;aaa&quot;)  一个值，表示第一个存在aaa的位置
-s.find_first_of(&quot;aaa&quot;,10)  一个值，表示10位之后第一个存在aaa的位置
-s.find(&quot;aaa&quot;)  一个值，存在aaa的位置
-s.erase(5,4); //从第五位开始连续删除4个字符 
-s.replace(5,4,&quot;233&quot;); //从第五位吞掉往后的4个字符，加上233
-</code></pre>
-<h3 id="4其他">4.其他</h3>
-<pre><code>strcmp(a,b)  一个值，字典序比较，a大输出正数  一样大输出0  b大输出负数 
-strcpy(a,b); //把b字符串覆盖给a 
-strlen(a+0); //从a[0]开始查找有多少字符 
-memcpy(a,b,sizeof(char)*100); //把整个b的前100位字符传送给a 
-</code></pre>
-<p>后排提醒</p>
-<pre><code>'0'=48
-'a'=97
-</code></pre>
+<h3 id="4-其他">4. 其他</h3>
+<p>排序的时间复杂度为O(nlogn)</p>
 
               </div>
               <div class="toc-container">
@@ -121,10 +102,10 @@ memcpy(a,b,sizeof(char)*100); //把整个b的前100位字符传送给a
 <ul>
 <li>
 <ul>
-<li><a href="#1%E5%A4%B4%E6%96%87%E4%BB%B6">1.头文件</a></li>
-<li><a href="#2%E5%A3%B0%E6%98%8E">2.声明</a></li>
-<li><a href="#3%E4%BD%BF%E7%94%A8">3.使用</a></li>
-<li><a href="#4%E5%85%B6%E4%BB%96">4.其他</a></li>
+<li><a href="#1-%E5%A4%B4%E6%96%87%E4%BB%B6">1. 头文件</a></li>
+<li><a href="#2-%E5%A3%B0%E6%98%8E">2. 声明</a></li>
+<li><a href="#3-%E7%94%A8%E6%B3%95">3. 用法</a></li>
+<li><a href="#4-%E5%85%B6%E4%BB%96">4. 其他</a></li>
 </ul>
 </li>
 </ul>
@@ -136,6 +117,15 @@ memcpy(a,b,sizeof(char)*100); //把整个b的前100位字符传送给a
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
+              <h3 class="post-title">
+                字符串进阶(string)用法
+              </h3>
+            </a>
+          </div>
         
 
         

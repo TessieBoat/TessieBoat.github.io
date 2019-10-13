@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://TessieBoat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-10-12T15:07:55.403Z</updated>
+    <updated>2019-10-13T11:13:41.138Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://TessieBoat.github.io"/>
     <link rel="self" href="https://TessieBoat.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://TessieBoat.github.io/images/avatar.png</logo>
     <icon>https://TessieBoat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, TessieBoat</rights>
+    <entry>
+        <title type="html"><![CDATA[vector 用法]]></title>
+        <id>https://TessieBoat.github.io/post/vector-yong-fa</id>
+        <link href="https://TessieBoat.github.io/post/vector-yong-fa">
+        </link>
+        <updated>2019-10-13T10:54:22.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="1-头文件">1. 头文件</h3>
+<pre><code>#include &lt;queue&gt;
+</code></pre>
+<h3 id="2-声明">2. 声明</h3>
+<pre><code>priority_queue &lt;int&gt; Q;//定义一个从大到小队列叫做 “Q” 
+priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt; &gt; Q;   //从小到大的队列 
+</code></pre>
+<h3 id="3-用法">3. 用法</h3>
+<pre><code>Q.top()   //输出第一位
+Q.pop();  //删除第一位
+Q.size()  //输出栈长度   
+Q.empty()  //输出是否为空（1或0）
+Q.push(x);  //把x输入进队列，并马上排序
+</code></pre>
+<h3 id="4-其他">4. 其他</h3>
+<p>排序的时间复杂度为O(nlogn)</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[字符串进阶(string)用法]]></title>
         <id>https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa</id>
