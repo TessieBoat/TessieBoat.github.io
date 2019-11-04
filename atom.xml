@@ -1,19 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://TessieBoat.github.io</id>
+    <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-10-14T08:13:37.575Z</updated>
+    <updated>2019-11-04T07:32:54.481Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://TessieBoat.github.io"/>
-    <link rel="self" href="https://TessieBoat.github.io/atom.xml"/>
+    <link rel="alternate" href="https://tessieboat.github.io"/>
+    <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
     <subtitle>享受学习的快乐</subtitle>
-    <logo>https://TessieBoat.github.io/images/avatar.png</logo>
-    <icon>https://TessieBoat.github.io/favicon.ico</icon>
+    <logo>https://tessieboat.github.io/images/avatar.png</logo>
+    <icon>https://tessieboat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, TessieBoat</rights>
     <entry>
+        <title type="html"><![CDATA[网易云音乐下架，到底什么是“救救孩子”？]]></title>
+        <id>https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi</id>
+        <link href="https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi">
+        </link>
+        <updated>2019-10-30T07:42:22.000Z</updated>
+        <content type="html"><![CDATA[<p>近日，网易云音乐的下架，令人深感悲痛。喜马拉雅FM，企鹅FM等音频软件纷纷下架整治，让人想到不久前各大视频、直播平台的整治，弹幕的集体消失，严重影响用户体验，哔哩哔哩弹幕网被称为“哔哩哔哩评论网”。</p>
+<p>说到整治，B站已经被广电局整治多次，下架了暴力血腥黄色等视频，并为“哲学”、“比利王”等词语设置了屏蔽词。只要带红色液体，就是“暴力血腥”，只要是被举报的游戏，就是“性暗示”。网上很多人呼吁着“救救孩子”，各大平台设置绿色上网、防沉迷为孩子们的成长“护航”。</p>
+<p>家长们似乎也得到了他们想要的。</p>
+<p><img src="https://s2.ax1x.com/2019/10/30/K4C18P.png" alt="K4C18P.png"></p>
+<p>真的是这样吗？</p>
+<p>我曾经在网上看到一位老师，自称当班主任，说“即使是最乖的孩子，也会在同学的QQ群里，‘艹’、‘日’等脏话连天。”老师说的很真实，的确是这样的。但真正很多时候，同学间的脏话并不代表骂人，脏话只是当语气词使用。</p>
+<p>现在是网络时代，谁都瞒不住谁。藏得再深，也没有用。孩子们还是在网上看见了不宜内容，看见了本来不该看见的东西。有位成年up说过：“我觉得在这些方面，有些小孩子都比我们懂得多。”</p>
+<p>所以，这些所谓的“整治”，只会带来麻烦，而不会给孩子带来健康的网络环境。</p>
+<p>这么多年，很多母亲也始终呼吁着“救救孩子”。把网络作为孩子的罪魁祸首，想当然地认为“我是一个合格的父母，我什么都做好了，你成绩不好，就是你的问题”，或者，把做过全部甩给游戏制造行业，或者甩给广电部门。</p>
+<p><img src="https://s2.ax1x.com/2019/10/30/K4C18P.png" alt="K4C18P.png"></p>
+<p>广电部门该整治什么？</p>
+<p>我这里有几点建议：</p>
+<ol>
+<li>
+<pre><code>严惩造谣者。尤其是关键词“健康”“致癌”等方面。
+</code></pre>
+</li>
+<li>
+<pre><code>增强网络公平性。取消博主删评功能，严惩炒热度，水军，刷榜等行为。
+</code></pre>
+</li>
+<li>
+<pre><code>打击盗版游戏，尤其是某讯公司。在法律上定义清楚抄袭的含义，并严惩剽窃他人思想结晶和汗水的行为。
+</code></pre>
+</li>
+<li>
+<pre><code>完善爱国教育。引导人们离开“盲目爱国”，改为“理性爱国”。
+</code></pre>
+</li>
+<li>
+<pre><code>优化互联网环境。如百度应把首页推送的广告厂商严格测评，给网民一个值得信任的广告。防止一家独大，影响用户体验和本行业的发展。
+</code></pre>
+</li>
+</ol>
+<p>这是小船在很久之前的想法，并不代表现在，仅作记录。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[priority_queue 用法]]></title>
-        <id>https://TessieBoat.github.io/post/vector-yong-fa</id>
-        <link href="https://TessieBoat.github.io/post/vector-yong-fa">
+        <id>https://tessieboat.github.io/post/vector-yong-fa</id>
+        <link href="https://tessieboat.github.io/post/vector-yong-fa">
         </link>
         <updated>2019-10-13T10:54:22.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-头文件">1. 头文件</h3>
@@ -36,8 +79,8 @@ Q.push(x);  //把x输入进队列，并马上排序
     </entry>
     <entry>
         <title type="html"><![CDATA[字符串进阶(string)用法]]></title>
-        <id>https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa</id>
-        <link href="https://TessieBoat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
+        <id>https://tessieboat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa</id>
+        <link href="https://tessieboat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
         </link>
         <updated>2019-10-12T13:54:38.000Z</updated>
         <content type="html"><![CDATA[<p>这是一个<s>非常脑残的</s>字符串。<br>
