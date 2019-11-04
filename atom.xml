@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-11-04T07:32:54.481Z</updated>
+    <updated>2019-11-04T07:44:04.423Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tessieboat.github.io"/>
     <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://tessieboat.github.io/images/avatar.png</logo>
     <icon>https://tessieboat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, TessieBoat</rights>
+    <entry>
+        <title type="html"><![CDATA[map的用法]]></title>
+        <id>https://tessieboat.github.io/post/map-de-yong-fa</id>
+        <link href="https://tessieboat.github.io/post/map-de-yong-fa">
+        </link>
+        <updated>2019-11-04T07:39:17.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="1-前言">1. 前言</h3>
+<p>啊，学hash的时候我就觉得</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[网易云音乐下架，到底什么是“救救孩子”？]]></title>
         <id>https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi</id>

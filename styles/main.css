@@ -982,9 +982,7 @@ td {
         color: #212529;
       }
     
-      body{
-pre code{
-font-family:20px;
-}
+      .post-detail .post .post-content pre code{
+    font-size: 1.6rem;
 }
     
