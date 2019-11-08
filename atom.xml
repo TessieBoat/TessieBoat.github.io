@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>C:/Users/34990/Documents/Gridea/output</id>
+    <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-11-08T06:36:06.445Z</updated>
+    <updated>2019-11-08T06:37:55.531Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="C:/Users/34990/Documents/Gridea/output"/>
-    <link rel="self" href="C:/Users/34990/Documents/Gridea/output/atom.xml"/>
+    <link rel="alternate" href="https://tessieboat.github.io"/>
+    <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
     <subtitle>享受学习的快乐</subtitle>
-    <logo>C:/Users/34990/Documents/Gridea/output/images/avatar.png</logo>
-    <icon>C:/Users/34990/Documents/Gridea/output/favicon.ico</icon>
+    <logo>https://tessieboat.github.io/images/avatar.png</logo>
+    <icon>https://tessieboat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, TessieBoat</rights>
     <entry>
         <title type="html"><![CDATA[高斯消元学习笔记]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/gao-si-xiao-yuan-xue-xi-bi-ji/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/gao-si-xiao-yuan-xue-xi-bi-ji/index.html">
+        <id>https://tessieboat.github.io/post/gao-si-xiao-yuan-xue-xi-bi-ji</id>
+        <link href="https://tessieboat.github.io/post/gao-si-xiao-yuan-xue-xi-bi-ji">
         </link>
         <updated>2019-11-08T01:48:46.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-什么是矩阵">1. 什么是矩阵</h3>
@@ -116,13 +116,16 @@
 <p>我当时觉得啊，高斯消元好简单啊啊啊啊，这时，同学甩过来这句话</p>
 <p><img src="https://s2.ax1x.com/2019/11/08/MVeun0.png" alt="MVeun0.png"></p>
 <p>寻思一下，还真的不好实现啊。</p>
-<p>通过等式的乘除，把 方程1 的x1系数a1分别化为 方程2-方程n 的x1系数，然后将 方程2-方程n 减去得到的新方程，从而消掉 方程2-方程n 中的x1。接着用 方程2的x2 继续把 方程3-方程n 中的x2消掉……</p>
+<p>通过等式的乘除，</p>
+<p><strong>第一步</strong>，把方程1的x1系数a1分别化为方程2-方程n的x1系数</p>
+<p><strong>第二步</strong>，然后将方程2-方程n减去得到的新方程，从而消掉方程2-方程n中的x1。</p>
+<p><strong>第三步</strong>接着用方程2的x2继续把方程3-方程n中的x2消掉……</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[map的用法]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/map-de-yong-fa/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/map-de-yong-fa/index.html">
+        <id>https://tessieboat.github.io/post/map-de-yong-fa</id>
+        <link href="https://tessieboat.github.io/post/map-de-yong-fa">
         </link>
         <updated>2019-11-04T07:39:17.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-前言">1. 前言</h3>
@@ -152,8 +155,8 @@ s[a]=1;
     </entry>
     <entry>
         <title type="html"><![CDATA[网易云音乐下架，到底什么是“救救孩子”？]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi/index.html">
+        <id>https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi</id>
+        <link href="https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi">
         </link>
         <updated>2019-10-30T07:42:22.000Z</updated>
         <content type="html"><![CDATA[<p>近日，网易云音乐的下架，令人深感悲痛。喜马拉雅FM，企鹅FM等音频软件纷纷下架整治，让人想到不久前各大视频、直播平台的整治，弹幕的集体消失，严重影响用户体验，哔哩哔哩弹幕网被称为“哔哩哔哩评论网”。</p>
@@ -195,8 +198,8 @@ s[a]=1;
     </entry>
     <entry>
         <title type="html"><![CDATA[priority_queue 用法]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/vector-yong-fa/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/vector-yong-fa/index.html">
+        <id>https://tessieboat.github.io/post/vector-yong-fa</id>
+        <link href="https://tessieboat.github.io/post/vector-yong-fa">
         </link>
         <updated>2019-10-13T10:54:22.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-头文件">1. 头文件</h3>
@@ -219,8 +222,8 @@ Q.push(x);  //把x输入进队列，并马上排序
     </entry>
     <entry>
         <title type="html"><![CDATA[字符串进阶(string)用法]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/zi-fu-chuan-jin-jie-stringyong-fa/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/zi-fu-chuan-jin-jie-stringyong-fa/index.html">
+        <id>https://tessieboat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa</id>
+        <link href="https://tessieboat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
         </link>
         <updated>2019-10-12T13:54:38.000Z</updated>
         <content type="html"><![CDATA[<p>这是一个<s>非常脑残的</s>字符串。<br>
