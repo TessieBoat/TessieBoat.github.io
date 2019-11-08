@@ -4,10 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>高斯消元学习笔记 | TessieBoat</title>
 <meta name="description" content="享受学习的快乐" />
-<link rel="shortcut icon" href="https://tessieboat.github.io/favicon.ico?v=1573196485148">
+<link rel="shortcut icon" href="C:/Users/34990/Documents/Gridea/output/favicon.ico?v=1573203962235">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://tessieboat.github.io/styles/main.css">
+<link rel="stylesheet" href="C:/Users/34990/Documents/Gridea/output/styles/main.css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -28,8 +28,8 @@
     <div class="main">
       <div class="main-content">
         <div class="site-header">
-  <a href="https://tessieboat.github.io">
-  <img class="avatar" src="https://tessieboat.github.io/images/avatar.png?v=1573196485148" alt="">
+  <a href="C:/Users/34990/Documents/Gridea/output">
+  <img class="avatar" src="C:/Users/34990/Documents/Gridea/output/images/avatar.png?v=1573203962235" alt="">
   </a>
   <h1 class="site-title">
     TessieBoat
@@ -71,7 +71,7 @@
                 2019-11-08
               </span>
               <span>
-                10 min read
+                12 min read
               </span>
               
             </div>
@@ -178,10 +178,204 @@
 <p>我当时觉得啊，高斯消元好简单啊啊啊啊，这时，同学甩过来这句话</p>
 <p><img src="https://s2.ax1x.com/2019/11/08/MVcyGT.png" alt="MVcyGT.png"></p>
 <p>寻思一下，还真的不好实现啊。</p>
-<p>通过等式的乘除，</p>
+<p>通过等式的乘除，进行多个等式的加减，削掉一些变量。</p>
 <p><strong>第一步</strong>，把方程1的x1系数a1分别化为方程2-方程n的x1系数</p>
 <p><strong>第二步</strong>，然后将方程2-方程n减去得到的新方程，从而消掉方程2-方程n中的x1。</p>
-<p><strong>第三步</strong>接着用方程2的x2继续把方程3-方程n中的x2消掉……</p>
+<p><strong>第三步</strong>，接着用方程2的x2继续把方程3-方程n中的x2消掉……</p>
+<p><strong>第N步</strong>，……</p>
+<p>比如，我们对于这个方程</p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MZCwIs.png" alt="MZCwIs.png"></p>
+<p>我们首先合并①和②</p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MZPPOS.png" alt="MZPPOS.png"></p>
+<p>2和4的最小公倍数是4，所以</p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MZPAoj.png" alt="MZPAoj.png"></p>
+<p>然后相减，得</p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MZPulV.jpg" alt="MZPulV.jpg"></p>
+<p>用同样的方法合并①和③，我们就有俩等式了</p>
+<p><a href="https://imgchr.com/i/MZP1w4"><img src="https://s2.ax1x.com/2019/11/08/MZP1w4.md.png" alt="MZP1w4.md.png"></a></p>
+<p>不断循环下去，我们就可以得到139z=139</p>
+<p>所以z=1</p>
+<p>嗯，那么，然后呢？</p>
+<p>我们可以在存贮的时候选用二维数组，然后一个一个得覆盖，由于等式每次都会少一层，让它留在那一层，然后再反推回去就可以了。</p>
+<p>最小公倍数的求法，我们用</p>
+<pre><code>int gcd(int a,int b)
+{   
+    if(a%b==0)  return b;
+    else    return gcd(b,a%b);
+}
+ 
+int lcm(int a,int b)
+{
+    return a*b/gcd(a,b)  
+}
+</code></pre>
+<p>由于我个人的做法是要在原数组上直接乘，为了回退，所以我又开了一个数组来存。以下是输入部分，非常简单。</p>
+<pre><code>int n;
+scanf(&quot;%d&quot;,&amp;n);
+	
+for(int i=1;i&lt;=n;i++)
+{
+	  for(int j=1;j&lt;=n+1;j++)
+		{
+			scanf(&quot;%d&quot;,&amp;a[i][j]);
+			c[i][j]=a[i][j];
+		}
+}
+</code></pre>
+<p>以下对于解方程的代码，不懂的可以看看注释掉的内容，或者自己研究一下。i用于循环1-n的变量的循环。为什么是n-1呢？是因为那时候直接求结果就ok啦！</p>
+<pre><code>for(int i=1;i&lt;=n-1;i++)
+	{
+		//printf(&quot;现在我们来消除x%d\n&quot;,i);
+		for(int op=1;op&lt;=n-i;op++)
+		{
+			int bei1=1,bei2=1;
+			if(a[i][i]&lt;0)
+			{
+				bei1=-1;
+				a[i][i]*=-1;
+			}
+			if(a[i+op][i]&lt;0)
+			{
+				bei1=-1;
+				a[i+op][i]*=-1;
+			}
+			
+			
+			int o=lcm(a[i][i],a[i+op][i]);
+			bei1=bei1*o/a[i][i];
+			bei2=bei2*o/a[i+op][i];
+			//printf(&quot;目前在计算第%d行和%d行  bei1:%d   bei2:%d\n&quot;,i,i+op,bei1,bei2);
+			
+			
+			a[i+1][i]=0;
+			for(int j=i+1;j&lt;=n+1;j++)
+			{
+				c[i][j]=a[i][j]*bei1;
+				c[i+op][j]=a[i+op][j]*bei2;
+				//int oo=a[i+op][j];//
+				
+				a[i+op][j]=c[i][j]-c[i+op][j];
+				//printf(&quot;a[%d][%d]的%d-a[%d][%d]的%d=%d \n&quot;,i,j,a[i][j],i+op,j,oo,a[i+op][j]);
+			}
+			//printf(&quot;\n&quot;);	
+		}
+	}
+</code></pre>
+<p>这里我们需要注意的是，如果你要通分的系数正好是负数，要取相反数。</p>
+<p>这样子，我们只是制成了一个新的矩阵，求解还要一段代码。</p>
+<pre><code>for(int i=n;i&gt;=1;i--)
+	{
+		for(int j=n;j&gt;=i+1;j--)
+		{
+			a[i][n+1]-=a[i][j]*b[j];
+		} 
+		b[i]=a[i][n+1]/a[i][i];
+	}
+</code></pre>
+<p>当然，它非常简单。</p>
+<h3 id="5-其余问题">5. 其余问题</h3>
+<p>我在学习这个当中，发现有的博客有使用单位阵来解释的，表示最后的解，我觉得也是一种挺好的方法。</p>
+<h3 id="6-源代码">6. 源代码</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int a[104][104];
+int b[104];
+int c[104][104];
+int gcd(int o,int oo)
+{   
+    if(o%oo==0)  return oo;
+    else    return gcd(oo,o%oo);
+}
+ 
+int lcm(int o,int oo)
+{
+    return o*oo/gcd(o,oo);    
+    
+}
+ 
+int main()
+{
+	int n;
+	scanf(&quot;%d&quot;,&amp;n);
+	
+	for(int i=1;i&lt;=n;i++)
+	{
+		for(int j=1;j&lt;=n+1;j++)
+		{
+			scanf(&quot;%d&quot;,&amp;a[i][j]);
+			c[i][j]=a[i][j];
+		}
+	}
+	
+	
+	for(int i=1;i&lt;=n-1;i++)
+	{
+		//printf(&quot;现在我们来消除x%d\n&quot;,i);
+		for(int op=1;op&lt;=n-i;op++)
+		{
+			int bei1=1,bei2=1;
+			if(a[i][i]&lt;0)
+			{
+				bei1=-1;
+				a[i][i]*=-1;
+			}
+			if(a[i+op][i]&lt;0)
+			{
+				bei1=-1;
+				a[i+op][i]*=-1;
+			}
+			
+			
+			int o=lcm(a[i][i],a[i+op][i]);
+			bei1=bei1*o/a[i][i];
+			bei2=bei2*o/a[i+op][i];
+			//printf(&quot;目前在计算第%d行和%d行  bei1:%d   bei2:%d\n&quot;,i,i+op,bei1,bei2);
+			
+			
+			a[i+1][i]=0;
+			for(int j=i+1;j&lt;=n+1;j++)
+			{
+				c[i][j]=a[i][j]*bei1;
+				c[i+op][j]=a[i+op][j]*bei2;
+				//int oo=a[i+op][j];//
+				
+				a[i+op][j]=c[i][j]-c[i+op][j];
+				//printf(&quot;a[%d][%d]的%d-a[%d][%d]的%d=%d \n&quot;,i,j,a[i][j],i+op,j,oo,a[i+op][j]);
+			}
+			//printf(&quot;\n&quot;);	
+		}
+	}
+	//printf(&quot;---------------------------\n&quot;);
+	/*
+	for(int i=1;i&lt;=n;i++)
+	{
+		for(int j=1;j&lt;=n+1;j++)
+		{
+			printf(&quot;%d &quot;,a[i][j]);
+		}
+		printf(&quot;\n&quot;);
+	}*/
+	
+	for(int i=n;i&gt;=1;i--)
+	{
+		for(int j=n;j&gt;=i+1;j--)
+		{
+			a[i][n+1]-=a[i][j]*b[j];
+		} 
+		b[i]=a[i][n+1]/a[i][i];
+	}
+	
+	for(int i=1;i&lt;=n;i++)
+	{
+		printf(&quot;x%d:%d\n&quot;,i,b[i]);
+	}
+	
+	return 0;
+}
+</code></pre>
+<p>如有需要，请开大数组。</p>
+<p>输入格式为先输入n，然后输入这个二维矩阵。</p>
+<p>好了，就到此结束啦！</p>
+<p><s>这是我目前写过的最长的博客</s></p>
 
               </div>
               <div class="toc-container">
@@ -198,6 +392,8 @@
 <li><a href="#2-%E7%9F%A9%E9%98%B5%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8">2. 矩阵有什么用？</a></li>
 <li><a href="#3-%E6%B6%88%E5%85%83%E8%BF%87%E7%A8%8B">3. 消元过程</a></li>
 <li><a href="#4-%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0">4. 代码实现</a></li>
+<li><a href="#5-%E5%85%B6%E4%BD%99%E9%97%AE%E9%A2%98">5. 其余问题</a></li>
+<li><a href="#6-%E6%BA%90%E4%BB%A3%E7%A0%81">6. 源代码</a></li>
 </ul>
 </li>
 </ul>
@@ -212,7 +408,7 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://tessieboat.github.io/post/map-de-yong-fa">
+            <a href="C:/Users/34990/Documents/Gridea/output/post/map-de-yong-fa/index.html">
               <h3 class="post-title">
                 map的用法
               </h3>
@@ -224,7 +420,7 @@
 
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://tessieboat.github.io/atom.xml" target="_blank">RSS</a>
+  <a class="rss" href="C:/Users/34990/Documents/Gridea/output/atom.xml" target="_blank">RSS</a>
 </div>
 
 <script>
