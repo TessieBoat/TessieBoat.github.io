@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-11-08T06:38:38.679Z</updated>
+    <updated>2019-11-08T07:01:27.174Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tessieboat.github.io"/>
     <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
@@ -114,7 +114,7 @@
 <p>嗯，就是这样。</p>
 <h3 id="4-代码实现">4. 代码实现</h3>
 <p>我当时觉得啊，高斯消元好简单啊啊啊啊，这时，同学甩过来这句话</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MVeun0.png" alt="MVeun0.png"></p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MVcyGT.png" alt="MVcyGT.png"></p>
 <p>寻思一下，还真的不好实现啊。</p>
 <p>通过等式的乘除，</p>
 <p><strong>第一步</strong>，把方程1的x1系数a1分别化为方程2-方程n的x1系数</p>
