@@ -4,10 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>高斯消元学习笔记 | TessieBoat</title>
 <meta name="description" content="享受学习的快乐" />
-<link rel="shortcut icon" href="https://tessieboat.github.io/favicon.ico?v=1573178313175">
+<link rel="shortcut icon" href="C:/Users/34990/Documents/Gridea/output/favicon.ico?v=1573180711288">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://tessieboat.github.io/styles/main.css">
+<link rel="stylesheet" href="C:/Users/34990/Documents/Gridea/output/styles/main.css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
@@ -28,8 +28,8 @@
     <div class="main">
       <div class="main-content">
         <div class="site-header">
-  <a href="https://tessieboat.github.io">
-  <img class="avatar" src="https://tessieboat.github.io/images/avatar.png?v=1573178313175" alt="">
+  <a href="C:/Users/34990/Documents/Gridea/output">
+  <img class="avatar" src="C:/Users/34990/Documents/Gridea/output/images/avatar.png?v=1573180711288" alt="">
   </a>
   <h1 class="site-title">
     TessieBoat
@@ -89,6 +89,19 @@
 <p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090106.png" alt="bg2015090106.png"></p>
 <p>可以表示为</p>
 <p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090107.png" alt="bg2015090107.png"></p>
+<p>它的运算法则就很复杂了。</p>
+<p>仔细观察会发现，结果中的第一行第一列等于左边矩阵的第一行第一列乘以右边矩阵的第一行第一列加上左边矩阵的第一行第二列乘以右边矩阵的第一行第二列。<s>（想一想，为什么）</s></p>
+<p>现在我们就可以直接进入线性方程组环节。</p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MEhb36.png" alt="MEhb36.png"></p>
+<p>这样的方程，可以表示为</p>
+<p><a href="https://imgchr.com/i/ME4d8x"><img src="https://s2.ax1x.com/2019/11/08/ME4d8x.md.png" alt="ME4d8x.md.png"></a></p>
+<h3 id="3-消元过程">3. 消元过程</h3>
+<p>讲了这么多高大上的东西，是不是觉得很牛逼？</p>
+<p><s>但是啊，实际上高斯消元就相当于多元一次解方程</s></p>
+<p><img src="https://s2.ax1x.com/2019/11/08/ME56yT.png" alt="ME56yT.png"></p>
+<p>这样的一个方程，变成矩阵，然后带入消元~~，跟小学生的解方程没有任何区别~~。</p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MEIF0g.png" alt="MEIF0g.png"></p>
+<p>嗯，就是这样。</p>
 
               </div>
               <div class="toc-container">
@@ -99,6 +112,7 @@
 <ul>
 <li><a href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A9%E9%98%B5">1. 什么是矩阵</a></li>
 <li><a href="#2-%E7%9F%A9%E9%98%B5%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8">2. 矩阵有什么用？</a></li>
+<li><a href="#3-%E6%B6%88%E5%85%83%E8%BF%87%E7%A8%8B">3. 消元过程</a></li>
 </ul>
 </li>
 </ul>
@@ -113,7 +127,7 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://tessieboat.github.io/post/map-de-yong-fa">
+            <a href="C:/Users/34990/Documents/Gridea/output/post/map-de-yong-fa/index.html">
               <h3 class="post-title">
                 map的用法
               </h3>
@@ -125,7 +139,7 @@
 
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://tessieboat.github.io/atom.xml" target="_blank">RSS</a>
+  <a class="rss" href="C:/Users/34990/Documents/Gridea/output/atom.xml" target="_blank">RSS</a>
 </div>
 
 <script>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://tessieboat.github.io</id>
+    <id>C:/Users/34990/Documents/Gridea/output</id>
     <title>TessieBoat</title>
-    <updated>2019-11-08T01:58:50.321Z</updated>
+    <updated>2019-11-08T02:38:33.476Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://tessieboat.github.io"/>
-    <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
+    <link rel="alternate" href="C:/Users/34990/Documents/Gridea/output"/>
+    <link rel="self" href="C:/Users/34990/Documents/Gridea/output/atom.xml"/>
     <subtitle>享受学习的快乐</subtitle>
-    <logo>https://tessieboat.github.io/images/avatar.png</logo>
-    <icon>https://tessieboat.github.io/favicon.ico</icon>
+    <logo>C:/Users/34990/Documents/Gridea/output/images/avatar.png</logo>
+    <icon>C:/Users/34990/Documents/Gridea/output/favicon.ico</icon>
     <rights>All rights reserved 2019, TessieBoat</rights>
     <entry>
         <title type="html"><![CDATA[高斯消元学习笔记]]></title>
-        <id>https://tessieboat.github.io/post/gao-si-xiao-yuan-xue-xi-bi-ji</id>
-        <link href="https://tessieboat.github.io/post/gao-si-xiao-yuan-xue-xi-bi-ji">
+        <id>C:/Users/34990/Documents/Gridea/output/post/gao-si-xiao-yuan-xue-xi-bi-ji/index.html</id>
+        <link href="C:/Users/34990/Documents/Gridea/output/post/gao-si-xiao-yuan-xue-xi-bi-ji/index.html">
         </link>
         <updated>2019-11-08T01:48:46.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-什么是矩阵">1. 什么是矩阵</h3>
@@ -27,12 +27,25 @@
 <p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090106.png" alt="bg2015090106.png"></p>
 <p>可以表示为</p>
 <p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090107.png" alt="bg2015090107.png"></p>
+<p>它的运算法则就很复杂了。</p>
+<p>仔细观察会发现，结果中的第一行第一列等于左边矩阵的第一行第一列乘以右边矩阵的第一行第一列加上左边矩阵的第一行第二列乘以右边矩阵的第一行第二列。<s>（想一想，为什么）</s></p>
+<p>现在我们就可以直接进入线性方程组环节。</p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MEhb36.png" alt="MEhb36.png"></p>
+<p>这样的方程，可以表示为</p>
+<p><a href="https://imgchr.com/i/ME4d8x"><img src="https://s2.ax1x.com/2019/11/08/ME4d8x.md.png" alt="ME4d8x.md.png"></a></p>
+<h3 id="3-消元过程">3. 消元过程</h3>
+<p>讲了这么多高大上的东西，是不是觉得很牛逼？</p>
+<p><s>但是啊，实际上高斯消元就相当于多元一次解方程</s></p>
+<p><img src="https://s2.ax1x.com/2019/11/08/ME56yT.png" alt="ME56yT.png"></p>
+<p>这样的一个方程，变成矩阵，然后带入消元~~，跟小学生的解方程没有任何区别~~。</p>
+<p><img src="https://s2.ax1x.com/2019/11/08/MEIF0g.png" alt="MEIF0g.png"></p>
+<p>嗯，就是这样。</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[map的用法]]></title>
-        <id>https://tessieboat.github.io/post/map-de-yong-fa</id>
-        <link href="https://tessieboat.github.io/post/map-de-yong-fa">
+        <id>C:/Users/34990/Documents/Gridea/output/post/map-de-yong-fa/index.html</id>
+        <link href="C:/Users/34990/Documents/Gridea/output/post/map-de-yong-fa/index.html">
         </link>
         <updated>2019-11-04T07:39:17.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-前言">1. 前言</h3>
@@ -62,8 +75,8 @@ s[a]=1;
     </entry>
     <entry>
         <title type="html"><![CDATA[网易云音乐下架，到底什么是“救救孩子”？]]></title>
-        <id>https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi</id>
-        <link href="https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi">
+        <id>C:/Users/34990/Documents/Gridea/output/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi/index.html</id>
+        <link href="C:/Users/34990/Documents/Gridea/output/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi/index.html">
         </link>
         <updated>2019-10-30T07:42:22.000Z</updated>
         <content type="html"><![CDATA[<p>近日，网易云音乐的下架，令人深感悲痛。喜马拉雅FM，企鹅FM等音频软件纷纷下架整治，让人想到不久前各大视频、直播平台的整治，弹幕的集体消失，严重影响用户体验，哔哩哔哩弹幕网被称为“哔哩哔哩评论网”。</p>
@@ -105,8 +118,8 @@ s[a]=1;
     </entry>
     <entry>
         <title type="html"><![CDATA[priority_queue 用法]]></title>
-        <id>https://tessieboat.github.io/post/vector-yong-fa</id>
-        <link href="https://tessieboat.github.io/post/vector-yong-fa">
+        <id>C:/Users/34990/Documents/Gridea/output/post/vector-yong-fa/index.html</id>
+        <link href="C:/Users/34990/Documents/Gridea/output/post/vector-yong-fa/index.html">
         </link>
         <updated>2019-10-13T10:54:22.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-头文件">1. 头文件</h3>
@@ -129,8 +142,8 @@ Q.push(x);  //把x输入进队列，并马上排序
     </entry>
     <entry>
         <title type="html"><![CDATA[字符串进阶(string)用法]]></title>
-        <id>https://tessieboat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa</id>
-        <link href="https://tessieboat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
+        <id>C:/Users/34990/Documents/Gridea/output/post/zi-fu-chuan-jin-jie-stringyong-fa/index.html</id>
+        <link href="C:/Users/34990/Documents/Gridea/output/post/zi-fu-chuan-jin-jie-stringyong-fa/index.html">
         </link>
         <updated>2019-10-12T13:54:38.000Z</updated>
         <content type="html"><![CDATA[<p>这是一个<s>非常脑残的</s>字符串。<br>
