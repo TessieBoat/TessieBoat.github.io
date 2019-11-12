@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>线段树学习笔记 | TessieBoat</title>
 <meta name="description" content="享受学习的快乐" />
-<link rel="shortcut icon" href="https://tessieboat.github.io/favicon.ico?v=1573544231399">
+<link rel="shortcut icon" href="https://tessieboat.github.io/favicon.ico?v=1573544298239">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://tessieboat.github.io/styles/main.css">
@@ -29,7 +29,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://tessieboat.github.io">
-  <img class="avatar" src="https://tessieboat.github.io/images/avatar.png?v=1573544231399" alt="">
+  <img class="avatar" src="https://tessieboat.github.io/images/avatar.png?v=1573544298239" alt="">
   </a>
   <h1 class="site-title">
     TessieBoat
@@ -140,7 +140,7 @@ int qu_r[10001];//维护的区间 右范围
 
 </code></pre>
 <h3 id="3-单点修改">3. 单点修改</h3>
-<p>如果我们要修改某些点的话，那么</p>
+<p>如果我们要修改某些点的话，假如我们改第二个为5</p>
 <p><img src="https://s2.ax1x.com/2019/11/12/M1qbNQ.png" alt="M1qbNQ.png"></p>
 <p>只要包含这个点的，都需要修改。</p>
 <pre><code class="language-cpp">void fix(int hao,int h,int zhi)//线段树所在编号  单点修改需要的编号   修改的值 
