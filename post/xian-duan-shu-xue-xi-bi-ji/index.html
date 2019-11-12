@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>map的用法 | TessieBoat</title>
+<title>线段树学习笔记 | TessieBoat</title>
 <meta name="description" content="享受学习的快乐" />
 <link rel="shortcut icon" href="C:/Users/34990/Documents/Gridea/output/favicon.ico?v=1573544077257">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -64,11 +64,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              map的用法
+              线段树学习笔记
             </h2>
             <div class="post-info">
               <span>
-                2019-11-04
+                2019-11-11
               </span>
               <span>
                 1 min read
@@ -78,29 +78,99 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h3 id="1-前言">1. 前言</h3>
-<p>啊，学hash之前我就觉得，一个单词，能不能这样存：</p>
-<p><a href="https://imgchr.com/i/KxPept"><img src="https://s2.ax1x.com/2019/11/04/KxPept.md.png" alt="KxPept.md.png"></a></p>
-<p>很显然，当然可以。<s>hash是什么我不知道</s></p>
-<p>但是呢，你会发现，这种100进制的方法，到5位就1亿了。<s>再多一位，再多一位，就会爆炸</s></p>
-<p>所以啊，有了这个简单且好用的map！</p>
-<p>它让我<s>这个C大爷都</s>很喜欢</p>
-<h3 id="2-头文件">2. 头文件</h3>
-<pre><code>#include &lt;map&gt;
-using namespace std;
+                <h3 id="1-原理">1. 原理</h3>
+<p>线段树是啥呢？</p>
+<p><img src="https://s2.ax1x.com/2019/11/12/M14rgU.jpg" alt="M14rgU.jpg"></p>
+<p>如图，就是一个数组的线段树。<s>所以，线段树的前提是要有一个原数组。</s></p>
+<p>假如，我想让你求数组中的区间和。那么肯定就有巨佬出现了：</p>
+<p><img src="https://s2.ax1x.com/2019/11/12/M1HdUJ.png" alt="M1HdUJ.png"></p>
+<p>呃……（空气安静3秒钟）</p>
+<p>好吧，我们求区间最大值。<s>这样，就能让这位巨佬哑口无言。</s></p>
+<p>我们把数组分成多个段，就像上面的图，1-n 可以分为 1 - n/2 和 n/2+1 - n两个区域，然后又可以分为四个区域……所以呢，这是一个二叉树。只要我们最后分下去的区间已经分不下去了，只剩一个点了，那么就可以结束了。</p>
+<p><img src="https://s2.ax1x.com/2019/11/12/M17dpt.png" alt="M17dpt.png"></p>
+<p>如图，就是一个对于a数组的线段树。同一个颜色的是同一层。因为我们肯定没有2.5这种东西，所以我们需要取整，导致看起来不对称。</p>
+<h3 id="2-建树">2. 建树</h3>
+<p>我们需要很多变量，我们慢慢来。</p>
+<p>首先，我们先说明，每个节点的左儿子编号为2n，右儿子为2n+1。</p>
+<p>以下，是我们需要的数组</p>
+<pre><code class="language-cpp">int zhi[10001];//原数组 
+int fak[10001];//线段树数组 
+int qu_l[10001];//维护的区间 左范围 
+int qu_r[10001];//维护的区间 右范围 
 </code></pre>
-<p>非常简单！不解释</p>
-<h3 id="3-申请">3. 申请</h3>
-<pre><code>map&lt;string, int&gt; s; //申请一个名字为s的map
+<p>原数组的输入我就不讲了，<strong>如果你真的不知道</strong>，我建议你看这个：<a href="https://www.bilibili.com/bangumi/media/md140632/?from=search&amp;seid=10835973984877149679">传送门</a></p>
+<pre><code class="language-cpp">void in(int l,int r,int hao)//左范围，右范围，编号 
+{
+	if(l==r)
+	{
+		fak[hao]=zhi[l];
+		return ;
+	}
+	
+	in(l,(l+r)/2,hao*2);
+	in((l+r)/2+1,r,hao*2+1);
+	
+	fak[hao]=max(fak[hao*2],fak[hao*2+1]); 
+	return ;
+}
 </code></pre>
-<h3 id="4-使用">4. 使用</h3>
-<pre><code>char a[1000001];
-scanf(&quot;%s&quot;,a);
-s[a]=1;
+<p>我们通过</p>
+<pre><code class="language-cpp">in(1,n,1);
 </code></pre>
-<p>这样就可以让a所对应的那个s的位置标记为1啦！</p>
-<p><s>非常简单有木有。</s></p>
-<p>后来我觉得博客写这么短不太合适，所以给大家丢一道题：<a href="https://www.luogu.org/problem/P1603">传送门</a></p>
+<p>就可以让它建树啦！但是呢，我们还需要让它存下对应节点所维护的区间。所以，我们需要加上一些代码。</p>
+<pre><code class="language-cpp">void in(int l,int r,int hao)//左，右，编号 
+{
+	if(l==r)
+	{
+		qu_l[hao]=l;
+		qu_r[hao]=r;//忘记记录害死猫 
+		fak[hao]=zhi[l];
+		return ;
+	}
+	
+	in(l,(l+r)/2,hao*2);
+	in((l+r)/2+1,r,hao*2+1);
+	
+	fak[hao]=max(fak[hao*2],fak[hao*2+1]); 
+	
+	qu_l[hao]=l;
+	qu_r[hao]=r;//记录其维护的区间 
+	return ;
+}
+
+</code></pre>
+<h3 id="3-单点修改">3. 单点修改</h3>
+<p>如果我们要修改某些点的话，那么</p>
+<p><img src="https://s2.ax1x.com/2019/11/12/M1qbNQ.png" alt="M1qbNQ.png"></p>
+<p>只要包含这个点的，都需要修改。</p>
+<pre><code class="language-cpp">void fix(int hao,int h,int zhi)//线段树所在编号  单点修改需要的编号   修改的值 
+{
+	if(qu_r[hao]==0 || qu_l[hao]==0)
+	{
+		return ;
+	}
+	if(qu_l[hao]==h &amp;&amp; qu_r[hao]==h) 
+	{
+		fak[hao]=zhi;
+		return ;
+	}
+	if(qu_l[hao]&lt;=h &amp;&amp; h&lt;=qu_r[hao])
+	{
+		fix(hao*2,h,zhi);
+		fix(hao*2+1,h,zhi);
+		fak[hao]=max(fak[hao],zhi); 
+		return ;
+	}
+	else
+	{
+		return ;
+	}
+} 
+</code></pre>
+<p>我们只需要</p>
+<pre><code>fix(1,[改变的位置],[改变的值]);
+</code></pre>
+<p>就完事了。</p>
 
               </div>
               <div class="toc-container">
@@ -109,10 +179,9 @@ s[a]=1;
 <ul>
 <li>
 <ul>
-<li><a href="#1-%E5%89%8D%E8%A8%80">1. 前言</a></li>
-<li><a href="#2-%E5%A4%B4%E6%96%87%E4%BB%B6">2. 头文件</a></li>
-<li><a href="#3-%E7%94%B3%E8%AF%B7">3. 申请</a></li>
-<li><a href="#4-%E4%BD%BF%E7%94%A8">4. 使用</a></li>
+<li><a href="#1-%E5%8E%9F%E7%90%86">1. 原理</a></li>
+<li><a href="#2-%E5%BB%BA%E6%A0%91">2. 建树</a></li>
+<li><a href="#3-%E5%8D%95%E7%82%B9%E4%BF%AE%E6%94%B9">3. 单点修改</a></li>
 </ul>
 </li>
 </ul>
@@ -127,9 +196,9 @@ s[a]=1;
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="C:/Users/34990/Documents/Gridea/output/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi/index.html">
+            <a href="C:/Users/34990/Documents/Gridea/output/post/lesslesswo-de-shi-jie-ji-yan-ban-greatergreater-scoreboard-zhi-ling-xue-xi/index.html">
               <h3 class="post-title">
-                网易云音乐下架，到底什么是“救救孩子”？
+                《我的世界：基岩版》scoreboard 指令学习
               </h3>
             </a>
           </div>
