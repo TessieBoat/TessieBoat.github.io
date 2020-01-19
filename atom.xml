@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>C:/Users/34990/Documents/Gridea/output</id>
+    <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2020-01-19T12:36:53.354Z</updated>
+    <updated>2020-01-19T12:40:17.415Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="C:/Users/34990/Documents/Gridea/output"/>
-    <link rel="self" href="C:/Users/34990/Documents/Gridea/output/atom.xml"/>
+    <link rel="alternate" href="https://tessieboat.github.io"/>
+    <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
     <subtitle>享受学习的快乐</subtitle>
-    <logo>C:/Users/34990/Documents/Gridea/output/images/avatar.png</logo>
-    <icon>C:/Users/34990/Documents/Gridea/output/favicon.ico</icon>
+    <logo>https://tessieboat.github.io/images/avatar.png</logo>
+    <icon>https://tessieboat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, TessieBoat</rights>
     <entry>
         <title type="html"><![CDATA[非均匀有理B样条学习笔记]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/fei-jun-yun-you-li-b-yang-tiao-xue-xi-bi-ji/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/fei-jun-yun-you-li-b-yang-tiao-xue-xi-bi-ji/index.html">
+        <id>https://tessieboat.github.io/post/fei-jun-yun-you-li-b-yang-tiao-xue-xi-bi-ji</id>
+        <link href="https://tessieboat.github.io/post/fei-jun-yun-you-li-b-yang-tiao-xue-xi-bi-ji">
         </link>
         <updated>2020-01-19T09:50:34.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-引入">1. 引入</h3>
@@ -36,12 +36,14 @@
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="mspace" style="margin-right:-25.607480314960632em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.49999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-3.15001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.30002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mord text"><span class="mord">P(t)=(x(t),y(t))</span></span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mspace" style="margin-right:-4.2679133858267715em;"></span><span class="mord text"><span class="mord"> x(t)=2t</span></span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mspace" style="margin-right:-4.2679133858267715em;"></span><span class="mord text"><span class="mord">y(t)=t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p>讲完了参数函数，我们过渡到回形针这个片段。</p>
 <p><a href=""><img src="https://pic2.zhimg.com/v2-0a0b262dab2bfd8155139b8c63f3f215_b.webp" alt="v2-0a0b262dab2bfd8155139b8c63f3f215_b.webp"></a></p>
+<p>现在，便不难理解这里的P(t)函数，P(1)，P(2)都包含了三个点的坐标，所以最后的P(t)也将是一个以P1为起点，P2为终点的直线。</p>
+<h3 id="3-贝塞尔曲线">3. 贝塞尔曲线</h3>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[线段树学习笔记]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/xian-duan-shu-xue-xi-bi-ji/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/xian-duan-shu-xue-xi-bi-ji/index.html">
+        <id>https://tessieboat.github.io/post/xian-duan-shu-xue-xi-bi-ji</id>
+        <link href="https://tessieboat.github.io/post/xian-duan-shu-xue-xi-bi-ji">
         </link>
         <updated>2019-11-11T08:13:11.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-原理">1. 原理</h3>
@@ -334,8 +336,8 @@ int main()
     </entry>
     <entry>
         <title type="html"><![CDATA[《我的世界：基岩版》scoreboard 指令学习]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/lesslesswo-de-shi-jie-ji-yan-ban-greatergreater-scoreboard-zhi-ling-xue-xi/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/lesslesswo-de-shi-jie-ji-yan-ban-greatergreater-scoreboard-zhi-ling-xue-xi/index.html">
+        <id>https://tessieboat.github.io/post/lesslesswo-de-shi-jie-ji-yan-ban-greatergreater-scoreboard-zhi-ling-xue-xi</id>
+        <link href="https://tessieboat.github.io/post/lesslesswo-de-shi-jie-ji-yan-ban-greatergreater-scoreboard-zhi-ling-xue-xi">
         </link>
         <updated>2019-11-11T00:51:46.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-objectives">1. objectives</h3>
@@ -347,8 +349,8 @@ int main()
     </entry>
     <entry>
         <title type="html"><![CDATA[高斯消元学习笔记]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/gao-si-xiao-yuan-xue-xi-bi-ji/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/gao-si-xiao-yuan-xue-xi-bi-ji/index.html">
+        <id>https://tessieboat.github.io/post/gao-si-xiao-yuan-xue-xi-bi-ji</id>
+        <link href="https://tessieboat.github.io/post/gao-si-xiao-yuan-xue-xi-bi-ji">
         </link>
         <updated>2019-11-08T01:48:46.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-什么是矩阵">1. 什么是矩阵</h3>
@@ -653,8 +655,8 @@ int main()
     </entry>
     <entry>
         <title type="html"><![CDATA[map的用法]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/map-de-yong-fa/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/map-de-yong-fa/index.html">
+        <id>https://tessieboat.github.io/post/map-de-yong-fa</id>
+        <link href="https://tessieboat.github.io/post/map-de-yong-fa">
         </link>
         <updated>2019-11-04T07:39:17.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-前言">1. 前言</h3>
@@ -684,8 +686,8 @@ s[a]=1;
     </entry>
     <entry>
         <title type="html"><![CDATA[网易云音乐下架，到底什么是“救救孩子”？]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi/index.html">
+        <id>https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi</id>
+        <link href="https://tessieboat.github.io/post/wang-yi-yun-yin-le-xia-jia-dao-di-shi-me-shi-jiu-jiu-hai-zi">
         </link>
         <updated>2019-10-30T07:42:22.000Z</updated>
         <content type="html"><![CDATA[<p>近日，网易云音乐的下架，令人深感悲痛。喜马拉雅FM，企鹅FM等音频软件纷纷下架整治，让人想到不久前各大视频、直播平台的整治，弹幕的集体消失，严重影响用户体验，哔哩哔哩弹幕网被称为“哔哩哔哩评论网”。</p>
@@ -727,8 +729,8 @@ s[a]=1;
     </entry>
     <entry>
         <title type="html"><![CDATA[priority_queue 用法]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/vector-yong-fa/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/vector-yong-fa/index.html">
+        <id>https://tessieboat.github.io/post/vector-yong-fa</id>
+        <link href="https://tessieboat.github.io/post/vector-yong-fa">
         </link>
         <updated>2019-10-13T10:54:22.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-头文件">1. 头文件</h3>
@@ -751,8 +753,8 @@ Q.push(x);  //把x输入进队列，并马上排序
     </entry>
     <entry>
         <title type="html"><![CDATA[字符串进阶(string)用法]]></title>
-        <id>C:/Users/34990/Documents/Gridea/output/post/zi-fu-chuan-jin-jie-stringyong-fa/index.html</id>
-        <link href="C:/Users/34990/Documents/Gridea/output/post/zi-fu-chuan-jin-jie-stringyong-fa/index.html">
+        <id>https://tessieboat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa</id>
+        <link href="https://tessieboat.github.io/post/zi-fu-chuan-jin-jie-stringyong-fa">
         </link>
         <updated>2019-10-12T13:54:38.000Z</updated>
         <content type="html"><![CDATA[<p>这是一个<s>非常脑残的</s>字符串。<br>
