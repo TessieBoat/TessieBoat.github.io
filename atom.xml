@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2020-01-19T13:38:58.587Z</updated>
+    <updated>2020-01-19T13:40:23.595Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tessieboat.github.io"/>
     <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
@@ -36,7 +36,7 @@
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="mspace" style="margin-right:-25.607480314960632em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.49999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-3.15001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.30002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mord text"><span class="mord">P(t)=(x(t),y(t))</span></span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mspace" style="margin-right:-4.2679133858267715em;"></span><span class="mord text"><span class="mord"> x(t)=2t</span></span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mspace" style="margin-right:-4.2679133858267715em;"></span><span class="mord text"><span class="mord">y(t)=t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p>讲完了参数函数，我们过渡到回形针这个片段。</p>
 <p><a href=""><img src="https://pic2.zhimg.com/v2-0a0b262dab2bfd8155139b8c63f3f215_b.webp" alt="v2-0a0b262dab2bfd8155139b8c63f3f215_b.webp"></a></p>
-<p>现在，便不难理解这里的P(t)函数，P(1)，P(2)都包含了三个点的坐标，所以最后的P(t)也将是一个以P1为起点，P2为终点的直线。</p>
+<p>现在，便不难理解这里的P(t)函数，P(1)，P(2)都包含了x,y,z轴的坐标，所以最后的P(t)也将是一个以P1为起点，P2为终点的直线。</p>
 <h3 id="3-贝塞尔曲线">3. 贝塞尔曲线</h3>
 <p>贝塞尔曲线，就是一种可自定义的参数函数。它可以在PS中用钢笔工具画出。</p>
 <p><a href=""><img src="https://pic3.zhimg.com/v2-f7a45a6c482e7cfa6b307f22efebb232_b.webp" alt="v2-f7a45a6c482e7cfa6b307f22efebb232_b.webp"></a></p>
