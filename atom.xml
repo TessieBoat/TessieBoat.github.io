@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>C:/Users/34990/Documents/Gridea/output</id>
     <title>TessieBoat</title>
-    <updated>2020-01-19T13:34:57.006Z</updated>
+    <updated>2020-01-19T13:35:49.387Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="C:/Users/34990/Documents/Gridea/output"/>
     <link rel="self" href="C:/Users/34990/Documents/Gridea/output/atom.xml"/>
@@ -48,7 +48,7 @@
 <p><a href=""><img src="https://pic2.zhimg.com/v2-d1f3f71ed2ae6a1d9276fff8ab970909_b.webp" alt="v2-d1f3f71ed2ae6a1d9276fff8ab970909_b.webp"></a></p>
 <p>而贝塞尔曲线是如何实现的？这些比例关系如何作用在直角坐标系上？这时候，我们就需要了解贝塞尔曲线的参数函数。</p>
 <p><a href="https://imgchr.com/i/1C7o1U"><img src="https://s2.ax1x.com/2020/01/19/1C7o1U.md.png" alt="1C7o1U.md.png"></a></p>
-<p>这就是贝塞尔曲线的参数函数，通过一个基函数B(t)控制了对应的每一个t，Pi对于整个图像P(t)的影响力。如果我们需要一个P(t)的坐标，就是B(t,i)与每个P点的坐标相乘的乘积的总和，如下图所示：</p>
+<p>这就是贝塞尔曲线的参数函数，通过一个基函数B(t)控制了对应的每一个t，Pi对于整个图像P(t)的影响力。如果<strong>我们需要一个P(t)的坐标，就是B(t,i)与每个P点的坐标相乘的乘积的总和</strong>，如下图所示：</p>
 <p><a href="https://imgchr.com/i/1CbRJ0"><img src="https://s2.ax1x.com/2020/01/19/1CbRJ0.md.png" alt="1CbRJ0.md.png"></a></p>
 <p>以回形针举的例子，三次贝塞尔曲线为例，我们可以看到B(t)对于编号1,2,3,4四个点的对应函数图像。</p>
 <p><a href="https://imgchr.com/i/1CbP2T"><img src="https://s2.ax1x.com/2020/01/19/1CbP2T.md.png" alt="1CbP2T.md.png"></a></p>
