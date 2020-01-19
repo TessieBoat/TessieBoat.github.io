@@ -2,14 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2019-11-12T09:02:27.295Z</updated>
+    <updated>2020-01-19T12:21:12.980Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tessieboat.github.io"/>
     <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
     <subtitle>享受学习的快乐</subtitle>
     <logo>https://tessieboat.github.io/images/avatar.png</logo>
     <icon>https://tessieboat.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, TessieBoat</rights>
+    <rights>All rights reserved 2020, TessieBoat</rights>
+    <entry>
+        <title type="html"><![CDATA[非均匀有理B样条学习笔记]]></title>
+        <id>https://tessieboat.github.io/post/fei-jun-yun-you-li-b-yang-tiao-xue-xi-bi-ji</id>
+        <link href="https://tessieboat.github.io/post/fei-jun-yun-you-li-b-yang-tiao-xue-xi-bi-ji">
+        </link>
+        <updated>2020-01-19T09:50:34.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="1-引入">1. 引入</h3>
+<p>如果你还没有看过<strong>回形针paperclip</strong>的<strong>如何设计一个逼真的三维模型</strong>，请在观看后再看此博客。</p>
+<p>当我看完这个视频的时候，我整个人都是蒙的，正如这条评论</p>
+<p><a href="https://imgchr.com/i/1CwshV"><img src="https://s2.ax1x.com/2020/01/19/1CwshV.md.png" alt="1CwshV.md.png"></a></p>
+<p>在以下的讲解中，会从函数到图像开始</p>
+<h3 id="2-从函数到多项式">2. 从函数到多项式</h3>
+<p>正如回形针所说，计算机不具有人类一样徒手画线的能力，而需要一个函数来画出一个曲线。</p>
+<p><a href="https://imgchr.com/i/1C0dgO"><img src="https://s2.ax1x.com/2020/01/19/1C0dgO.md.png" alt="1C0dgO.md.png"></a></p>
+<p>从小学到高中我们学了很多函数图像，将这些图像伸缩，平移，就可以<strong>基本满足</strong>曲线的要求。</p>
+<p>而回形针的方式，是将普通f(x)的函数转变为参数函数。如以下这个函数<strong>y=0.5x</strong></p>
+<p><a href="https://imgchr.com/i/1ChFJg"><img src="https://s2.ax1x.com/2020/01/19/1ChFJg.md.png" alt="1ChFJg.md.png"></a></p>
+<p>如果你看到回形针的P(t)=(x(t),y(t)),你可以把它理解为，在这个函数上的任意一个P点，满足一个x坐标和y坐标的关系。如果将上图中函数的P点的y坐标记作t，那么P的坐标就为P(2t,t)，那么就可以表示为</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="-8.535826771653543em"/><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext> P(t)=(x(t),y(t))</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mspace width="-5.690551181102363em"/><mtext>x(t)=2t</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mspace width="-5.690551181102363em"/><mi>y</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mi>t</mi></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">\hspace{-3cm} \left\{\begin{matrix}
+\ \text{P(t)=(x(t),y(t))}\\
+\ \hspace{-2cm} \text{x(t)=2t}\\
+\ \hspace{-2cm} y(t)=t
+\end{matrix}\right.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="mspace" style="margin-right:-8.535826771653543em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.49999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-3.15001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.30002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mord text"><span class="mord">P(t)=(x(t),y(t))</span></span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mspace" style="margin-right:-5.690551181102363em;"></span><span class="mord text"><span class="mord">x(t)=2t</span></span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mspace"> </span><span class="mspace" style="margin-right:-5.690551181102363em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathdefault">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord mathdefault">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[线段树学习笔记]]></title>
         <id>https://tessieboat.github.io/post/xian-duan-shu-xue-xi-bi-ji</id>
