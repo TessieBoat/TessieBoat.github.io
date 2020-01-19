@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2020-01-19T13:40:23.595Z</updated>
+    <updated>2020-01-19T14:35:06.704Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tessieboat.github.io"/>
     <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
@@ -17,12 +17,12 @@
         </link>
         <updated>2020-01-19T09:50:34.000Z</updated>
         <content type="html"><![CDATA[<h3 id="1-引入">1. 引入</h3>
-<p>如果你还没有看过<strong>回形针paperclip</strong>的<strong>如何设计一个逼真的三维模型</strong>，请在观看后再看此博客。</p>
+<p>如果你还没有看过<strong>回形针paperclip</strong>的<strong>如何设计一个逼真的三维模型</strong>，可以在观看后再看此博客。</p>
 <p>当我看完这个视频的时候，我整个人都是蒙的，正如这条评论</p>
 <p><a href="https://imgchr.com/i/1CwshV"><img src="https://s2.ax1x.com/2020/01/19/1CwshV.md.png" alt="1CwshV.md.png"></a></p>
 <p>在以下的讲解中，会从函数到图像开始</p>
 <h3 id="2-从函数到多项式">2. 从函数到多项式</h3>
-<p>正如回形针所说，计算机不具有人类一样徒手画线的能力，而需要一个函数来画出一个曲线。</p>
+<p>正如回形针所说，计算机不具有人类一样徒手画线的能力，为了画出一条曲线，计算机需要一个函数来画出一个曲线。</p>
 <p><a href="https://imgchr.com/i/1C0dgO"><img src="https://s2.ax1x.com/2020/01/19/1C0dgO.md.png" alt="1C0dgO.md.png"></a></p>
 <p>从小学到高中我们学了很多函数图像，将这些图像伸缩，平移，就可以<strong>基本满足</strong>曲线的要求。</p>
 <p>而回形针的方式，是将普通f(x)的函数转变为参数函数。如以下这个函数<strong>y=0.5x</strong></p>
@@ -54,7 +54,14 @@
 <p><a href="https://imgchr.com/i/1CbP2T"><img src="https://s2.ax1x.com/2020/01/19/1CbP2T.md.png" alt="1CbP2T.md.png"></a></p>
 <p>我们可以很明显的发现，当t=0时，P(0)在P1上，当t=1时，P(1)在P4上。而当t在0到1的范围中间的时候，P就构成了这个曲线。</p>
 <p>当我们更改任何一个点，都可以会改变这个曲线。而且我们没法控制每个点的权重。于是，在贝塞尔曲线的基础上，出现了均匀有理B样条。</p>
-<h3 id="4-均匀有理b样条">4. 均匀有理B样条</h3>
+<h3 id="4-均匀b样条">4. 均匀B样条</h3>
+<p>这是B样条曲线和贝塞尔曲线的参数函数。</p>
+<p><a href="https://imgchr.com/i/1CvJeS"><img src="https://s2.ax1x.com/2020/01/19/1CvJeS.md.png" alt="1CvJeS.md.png"></a></p>
+<p>可以看到除了定义域和基函数，其他的都是一样的。</p>
+<p><a href="https://imgchr.com/i/1CxEpn"><img src="https://s2.ax1x.com/2020/01/19/1CxEpn.md.png" alt="1CxEpn.md.png"></a></p>
+<p>这是B样条基函数的展开式。其中，大T中的t1,t2,t3……都是自己设定的数值，用于设定局部控制，k是需要的次数，n是节点个数。</p>
+<p>以4个节点的三次B样条为例，我们需要设定t0到t7一共8个值，我们假定它们为均匀的0 1 2 3 4 5 6 7。</p>
+<p><a href="https://imgchr.com/i/1PSIO0"><img src="https://s2.ax1x.com/2020/01/19/1PSIO0.md.png" alt="1PSIO0.md.png"></a></p>
 ]]></content>
     </entry>
     <entry>
