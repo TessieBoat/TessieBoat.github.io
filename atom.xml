@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2020-02-06T13:40:35.785Z</updated>
+    <updated>2020-02-06T13:41:32.620Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tessieboat.github.io"/>
     <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
@@ -10,16 +10,4 @@
     <logo>https://tessieboat.github.io/images/avatar.png</logo>
     <icon>https://tessieboat.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, TessieBoat</rights>
-    <entry>
-        <title type="html"><![CDATA[恭喜你，来到了这里]]></title>
-        <id>https://tessieboat.github.io/post/a3ea992d21e7c8eeaf37c21eb50f1650b770d589</id>
-        <link href="https://tessieboat.github.io/post/a3ea992d21e7c8eeaf37c21eb50f1650b770d589">
-        </link>
-        <updated>2020-02-06T13:37:50.000Z</updated>
-        <content type="html"><![CDATA[<p>如果你看到这个内容，说明第一阶段已经结束了。</p>
-<p>现在，是第二阶段的时间。</p>
-<p>下载我的世界java最新的快照版，加入121.43.42.134:10086</p>
-<p>开始你的第二步解密</p>
-]]></content>
-    </entry>
 </feed>
