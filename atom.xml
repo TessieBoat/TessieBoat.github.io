@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tessieboat.github.io</id>
     <title>TessieBoat</title>
-    <updated>2021-04-03T10:56:40.009Z</updated>
+    <updated>2021-04-03T10:58:09.865Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tessieboat.github.io"/>
     <link rel="self" href="https://tessieboat.github.io/atom.xml"/>
@@ -29,12 +29,12 @@
 <p>ssr下载链接：<a href="https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases/download/4.7.0/ShadowsocksR-4.7.0-win.7z">下载</a></p>
 <p>下载完成后解压，相关节点会在<a href="https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7">这里</a>更新。</p>
 <figure data-type="image" tabindex="1"><img src="https://ftp.bmp.ovh/imgs/2021/04/d2a242aba9367037.png" alt="" loading="lazy"></figure>
-<p>导入SSR链接的方法，当然你也可以手动输入。</p>
+<p>上图是导入SSR链接的方法，当然你也可以手动输入。</p>
 <p><strong>V2ray</strong></p>
 <p>V2ray下载链接：<a href="https://github.com/2dust/v2rayN/releases/download/4.13/v2rayN.zip">下载</a></p>
 <p>下载完成后解压，相关节点会在<a href="https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7">这里</a>更新。</p>
 <figure data-type="image" tabindex="2"><img src="https://ftp.bmp.ovh/imgs/2021/04/f83d20b335695229.png" alt="" loading="lazy"></figure>
-<p>导入V2ray链接的方法，当然你也可以手动输入。</p>
+<p>上图是导入V2ray链接的方法，当然你也可以手动输入。</p>
 <p><strong>注意事项</strong></p>
 <p>请注意设置你的代理设置，一般选择全局代理。</p>
 ]]></content>
