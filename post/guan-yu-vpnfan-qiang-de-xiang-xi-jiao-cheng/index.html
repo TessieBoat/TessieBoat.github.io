@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>字符串进阶(string)用法 | TessieBoat</title>
+<title>关于VPN/翻墙的新手教程 | TessieBoat</title>
 <meta name="description" content="享受学习的快乐" />
 <link rel="shortcut icon" href="https://tessieboat.github.io/favicon.ico?v=1617441236401">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -64,11 +64,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              字符串进阶(string)用法
+              关于VPN/翻墙的新手教程
             </h2>
             <div class="post-info">
               <span>
-                2019-10-12
+                2021-04-03
               </span>
               <span>
                 2 min read
@@ -78,41 +78,27 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>这是一个<s>非常脑残的</s>字符串。<br>
-对于一个C<s>大爷</s>选手，还是挺不习惯这个的。</p>
-<h3 id="1头文件">1.头文件</h3>
-<pre><code>#include &lt;cstring&gt;
-</code></pre>
-<h3 id="2声明">2.声明</h3>
-<pre><code>string s;
-</code></pre>
-<p>相当于一个不定长的char。</p>
-<h3 id="3使用">3.使用</h3>
-<p>基本<s>操作</s>用法</p>
-<pre><code>cin&gt;&gt;s; //输入
-cout&lt;&lt;s&lt;&lt;endl; //输出
-</code></pre>
-<p>进阶用法</p>
-<pre><code>getline(cin,s); //输入一整行  但是\n会被记录 
-s.length()  一个值，字符串长度
-s=s+t; //把t插入在s后面
-s.substr(1,3)  一串字符，从s的第1位到第3位
-s.find_first_of(&quot;aaa&quot;)  一个值，表示第一个存在aaa的位置
-s.find_first_of(&quot;aaa&quot;,10)  一个值，表示10位之后第一个存在aaa的位置
-s.find(&quot;aaa&quot;)  一个值，存在aaa的位置
-s.erase(5,4); //从第五位开始连续删除4个字符 
-s.replace(5,4,&quot;233&quot;); //从第五位吞掉往后的4个字符，加上233
-</code></pre>
-<h3 id="4其他">4.其他</h3>
-<pre><code>strcmp(a,b)  一个值，字典序比较，a大输出正数  一样大输出0  b大输出负数 
-strcpy(a,b); //把b字符串覆盖给a 
-strlen(a+0); //从a[0]开始查找有多少字符 
-memcpy(a,b,sizeof(char)*100); //把整个b的前100位字符传送给a 
-</code></pre>
-<p>后排提醒</p>
-<pre><code>'0'=48
-'a'=97
-</code></pre>
+                <h3 id="1简介">1.简介</h3>
+<p>出于某些目的，中国在大陆的互联网中设置了防火墙，用域名解析服务缓存污染、TCP连接重置等方式，过滤一些“非法”的网站。<br>
+本教程将教会你使用<strong>简单的</strong>科学上网方式，以便备用。</p>
+<h3 id="2确认系统">2.确认系统</h3>
+<p>对于电脑，存在Windows系统，macOS系统和linux系统。<br>
+对于手机，苹果的是iOS系统，<strong>不是苹果的统统是安卓系统</strong>。</p>
+<p>需要注意，手机中<strong>鸿蒙OS是安卓系统</strong>，UOS是linux系统。</p>
+<h3 id="3下载安装">3.下载安装</h3>
+<h1 id="1-windows系统">(1) windows系统</h1>
+<p><strong>SSR</strong></p>
+<p>ssr下载链接：https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases/download/4.7.0/ShadowsocksR-4.7.0-win.7z</p>
+<p>下载完成后解压，相关节点会在https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7 更新。</p>
+<figure data-type="image" tabindex="1"><img src="https://ftp.bmp.ovh/imgs/2021/04/d2a242aba9367037.png" alt="" loading="lazy"></figure>
+<p>导入SSR链接的方法，当然你也可以手动输入。</p>
+<p><strong>V2ray</strong></p>
+<p>V2ray下载链接：https://github.com/2dust/v2rayN/releases/download/4.13/v2rayN.zip</p>
+<p>下载完成后解压，相关节点会在https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7 更新。</p>
+<figure data-type="image" tabindex="2"><img src="https://ftp.bmp.ovh/imgs/2021/04/f83d20b335695229.png" alt="" loading="lazy"></figure>
+<p>导入V2ray链接的方法，当然你也可以手动输入。</p>
+<p><strong>注意事项</strong></p>
+<p>请注意设置你的代理设置，一般选择全局代理。</p>
 
               </div>
               <div class="toc-container">
@@ -121,14 +107,14 @@ memcpy(a,b,sizeof(char)*100); //把整个b的前100位字符传送给a
 <ul>
 <li>
 <ul>
-<li><a href="#1%E5%A4%B4%E6%96%87%E4%BB%B6">1.头文件</a></li>
-<li><a href="#2%E5%A3%B0%E6%98%8E">2.声明</a></li>
-<li><a href="#3%E4%BD%BF%E7%94%A8">3.使用</a></li>
-<li><a href="#4%E5%85%B6%E4%BB%96">4.其他</a></li>
+<li><a href="#1%E7%AE%80%E4%BB%8B">1.简介</a></li>
+<li><a href="#2%E7%A1%AE%E8%AE%A4%E7%B3%BB%E7%BB%9F">2.确认系统</a></li>
+<li><a href="#3%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85">3.下载安装</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li><a href="#1-windows%E7%B3%BB%E7%BB%9F">(1) windows系统</a></li>
 </ul>
 
               </div>

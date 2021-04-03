@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>高斯消元学习笔记 | TessieBoat</title>
 <meta name="description" content="享受学习的快乐" />
-<link rel="shortcut icon" href="https://tessieboat.github.io/favicon.ico?v=1580996473206">
+<link rel="shortcut icon" href="https://tessieboat.github.io/favicon.ico?v=1617441236401">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://tessieboat.github.io/styles/main.css">
@@ -29,7 +29,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://tessieboat.github.io">
-  <img class="avatar" src="https://tessieboat.github.io/images/avatar.png?v=1580996473206" alt="">
+  <img class="avatar" src="https://tessieboat.github.io/images/avatar.png?v=1617441236401" alt="">
   </a>
   <h1 class="site-title">
     TessieBoat
@@ -71,7 +71,7 @@
                 2019-11-08
               </span>
               <span>
-                12 min read
+                10 min read
               </span>
               
             </div>
@@ -79,9 +79,9 @@
             <div class="post-content-wrapper">
               <div class="post-content">
                 <h3 id="1-什么是矩阵">1. 什么是矩阵</h3>
-<p><img src="https://s2.ax1x.com/2019/11/08/MEcstf.png" alt="MEcstf.png"></p>
+<figure data-type="image" tabindex="1"><img src="https://s2.ax1x.com/2019/11/08/MEcstf.png" alt="MEcstf.png" loading="lazy"></figure>
 <p>如图，是一个表格，每个表格中，有一些数据来表示信息。如果我们把其中的数字单独提取出来，就是矩阵。</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MEc9yj.png" alt="MEc9yj.png"></p>
+<figure data-type="image" tabindex="2"><img src="https://s2.ax1x.com/2019/11/08/MEc9yj.png" alt="MEc9yj.png" loading="lazy"></figure>
 <p>如图，我们就把上面的表格表示成了一个矩阵。</p>
 <h4 id="特殊定义">特殊定义</h4>
 <p>对于一些特殊的矩阵，有一些定义。</p>
@@ -158,25 +158,25 @@
 <h3 id="2-矩阵有什么用">2. 矩阵有什么用？</h3>
 <p>肯定就会有人问了，你把数据单独提取出来，有桃子用啊。</p>
 <p>最为简单的，就是表示方程，如图的方程</p>
-<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090106.png" alt="bg2015090106.png"></p>
+<figure data-type="image" tabindex="3"><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090106.png" alt="bg2015090106.png" loading="lazy"></figure>
 <p>可以表示为</p>
-<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090107.png" alt="bg2015090107.png"></p>
+<figure data-type="image" tabindex="4"><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015090107.png" alt="bg2015090107.png" loading="lazy"></figure>
 <p>它的运算法则就很复杂了。</p>
 <p>仔细观察会发现，结果中的第一行第一列等于左边矩阵的第一行第一列乘以右边矩阵的第一行第一列加上左边矩阵的第一行第二列乘以右边矩阵的第一行第二列。<s>（想一想，为什么）</s></p>
 <p>现在我们就可以直接进入线性方程组环节。</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MEhb36.png" alt="MEhb36.png"></p>
+<figure data-type="image" tabindex="5"><img src="https://s2.ax1x.com/2019/11/08/MEhb36.png" alt="MEhb36.png" loading="lazy"></figure>
 <p>这样的方程，可以表示为</p>
-<p><a href="https://imgchr.com/i/ME4d8x"><img src="https://s2.ax1x.com/2019/11/08/ME4d8x.md.png" alt="ME4d8x.md.png"></a></p>
+<figure data-type="image" tabindex="6"><a href="https://imgchr.com/i/ME4d8x"><img src="https://s2.ax1x.com/2019/11/08/ME4d8x.md.png" alt="ME4d8x.md.png" loading="lazy"></a></figure>
 <h3 id="3-消元过程">3. 消元过程</h3>
 <p>讲了这么多高大上的东西，是不是觉得很牛逼？</p>
 <p><s>但是啊，实际上高斯消元就相当于多元一次解方程</s></p>
-<p><img src="https://s2.ax1x.com/2019/11/08/ME56yT.png" alt="ME56yT.png"></p>
+<figure data-type="image" tabindex="7"><img src="https://s2.ax1x.com/2019/11/08/ME56yT.png" alt="ME56yT.png" loading="lazy"></figure>
 <p>这样的一个方程，变成矩阵，然后带入消元，<s>跟小学生的解方程没有任何区别</s>。</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MEIF0g.png" alt="MEIF0g.png"></p>
+<figure data-type="image" tabindex="8"><img src="https://s2.ax1x.com/2019/11/08/MEIF0g.png" alt="MEIF0g.png" loading="lazy"></figure>
 <p>嗯，就是这样。</p>
 <h3 id="4-代码实现">4. 代码实现</h3>
 <p>我当时觉得啊，高斯消元好简单啊啊啊啊，这时，同学甩过来这句话</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MVcyGT.png" alt="MVcyGT.png"></p>
+<figure data-type="image" tabindex="9"><img src="https://s2.ax1x.com/2019/11/08/MVcyGT.png" alt="MVcyGT.png" loading="lazy"></figure>
 <p>寻思一下，还真的不好实现啊。</p>
 <p>通过等式的乘除，进行多个等式的加减，削掉一些变量。</p>
 <p><strong>第一步</strong>，把方程1的x1系数a1分别化为方程2-方程n的x1系数</p>
@@ -184,15 +184,15 @@
 <p><strong>第三步</strong>，接着用方程2的x2继续把方程3-方程n中的x2消掉……</p>
 <p><strong>第N步</strong>，……</p>
 <p>比如，我们对于这个方程</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MZCwIs.png" alt="MZCwIs.png"></p>
+<figure data-type="image" tabindex="10"><img src="https://s2.ax1x.com/2019/11/08/MZCwIs.png" alt="MZCwIs.png" loading="lazy"></figure>
 <p>我们首先合并①和②</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MZPPOS.png" alt="MZPPOS.png"></p>
+<figure data-type="image" tabindex="11"><img src="https://s2.ax1x.com/2019/11/08/MZPPOS.png" alt="MZPPOS.png" loading="lazy"></figure>
 <p>2和4的最小公倍数是4，所以</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MZPAoj.png" alt="MZPAoj.png"></p>
+<figure data-type="image" tabindex="12"><img src="https://s2.ax1x.com/2019/11/08/MZPAoj.png" alt="MZPAoj.png" loading="lazy"></figure>
 <p>然后相减，得</p>
-<p><img src="https://s2.ax1x.com/2019/11/08/MZPulV.jpg" alt="MZPulV.jpg"></p>
+<figure data-type="image" tabindex="13"><img src="https://s2.ax1x.com/2019/11/08/MZPulV.jpg" alt="MZPulV.jpg" loading="lazy"></figure>
 <p>用同样的方法合并①和③，我们就有俩等式了</p>
-<p><a href="https://imgchr.com/i/MZP1w4"><img src="https://s2.ax1x.com/2019/11/08/MZP1w4.md.png" alt="MZP1w4.md.png"></a></p>
+<figure data-type="image" tabindex="14"><a href="https://imgchr.com/i/MZP1w4"><img src="https://s2.ax1x.com/2019/11/08/MZP1w4.md.png" alt="MZP1w4.md.png" loading="lazy"></a></figure>
 <p>不断循环下去，我们就可以得到139z=139</p>
 <p>所以z=1</p>
 <p>嗯，那么，然后呢？</p>
